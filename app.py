@@ -13,7 +13,6 @@ from langchain.prompts.chat import ChatPromptTemplate
 from functions.helper import generate_response
 
 # Load modules required for RAG system
-from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_text_splitters import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -21,7 +20,6 @@ from langchain_community.vectorstores import FAISS
 # Load modules required for custom output parsing
 from classes.custom_class import AnswerParser
 from functions.helper import process_documents
-from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 from langchain_core.output_parsers import PydanticOutputParser
 
