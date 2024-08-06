@@ -31,7 +31,7 @@ load_dotenv('env.yaml')
 # For some reason we need to define these outside of the env file
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://eu.api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_API_KEY"] = ###
 
 # Read the file paths of the documents in
 with open("config.json", 'r') as file:
